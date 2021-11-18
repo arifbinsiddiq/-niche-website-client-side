@@ -1,0 +1,41 @@
+.bg-nav{
+    background-color: black;
+}
+
+#nav-brand{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+#nav-item{
+    font-size: 18px;
+    color: white;
+}
+
+/* #nav-item:hover{
+    color: black;
+} */
+
+.log-out button{
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.user-photo{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.user-photo img{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+}

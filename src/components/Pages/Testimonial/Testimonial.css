@@ -1,0 +1,18 @@
+.testimonial-bg{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgba(0,0,0,.7);
+}
+
+.testimonial{
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.user-profile{
+    width: 50px;
+    height: 50px;
+}

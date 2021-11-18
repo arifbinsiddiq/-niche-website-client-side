@@ -1,0 +1,52 @@
+.bike-details-section{
+    margin: 100px auto;
+}
+
+.bike-details h2{
+    font-size: 48px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.bike-details-img{
+    width: 100%;
+    height: 100%;
+}
+
+.bike-details-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.bike-booking-form h2{
+    font-size: 48px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.bike-booking-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bike-booking-form form input{
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 15px;
+    
+}
+
+.booking-order-btn{
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+

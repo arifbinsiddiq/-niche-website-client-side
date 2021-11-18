@@ -1,0 +1,38 @@
+.register-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.register-form div h2{
+    color: #0046C0;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.already-register{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.already-register a{
+    text-decoration: none;
+}
+
+.login-or{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.google-btn{
+    background-color: #0046C0;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
