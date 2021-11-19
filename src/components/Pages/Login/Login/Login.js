@@ -21,30 +21,10 @@ const Login = () => {
     }
     const handleLoginSubmit = e => {
         loginUser(loginData.email, loginData.password, location, history);
-        // console.log(loginData)
+
         e.preventDefault();
     }
-    // const [loginData, setLoginData] = useState({});
-
-    // const {user, loginUser, isLoading, authError} = useAuth();
-
-    // const location = useLocation();
-    // const history = useHistory();
-
-    // const handleOnChange = e =>{
-    //     const field = e.target.name;
-    //     const value = e.target.value;
-    //     const newLoginData = {...loginData};
-    //     newLoginData[field] = value;
-    //     setLoginData(newLoginData);
-    // }
-
-    // const handleLoginSubmit = e =>{
-    //     loginUser(loginData.email, loginData.password, location, history);
-    //     e.preventDefault();
-    // }
-
-
+    
     return (
         <div className="login-form">
             <div>

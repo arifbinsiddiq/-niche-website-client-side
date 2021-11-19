@@ -13,11 +13,7 @@ const useFirebase = () => {
     const [authError, setAuthError] = useState('');
     const [admin, setAdmin] = useState(false);
 
-
-
     const auth = getAuth();
-    
-
 
     const registerUser = (name, email, password, history) => {
         setIsLoading(true);
@@ -61,20 +57,6 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
-    // const loginUser = (email, password, location, history) => {
-    //     setIsLoading(true);
-    //     signInWithEmailAndPassword(auth, email, password)
-    //         .then((userCredential) => {
-    //             const destination = location?.state?.from || '/';
-    //             history.replace(destination);
-    //             setAuthError('');
-    //         })
-    //         .catch((error) => {
-    //             setAuthError(error.message);
-    //         })
-    //         .finally(()=>setIsLoading(false));
-    // }
-
     useEffect(()=>{
         fetch(`https://thawing-atoll-32330.herokuapp.com/users/${user.email}`)
         .then(res => res.json())
@@ -84,9 +66,9 @@ const useFirebase = () => {
     const logout = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
-            // Sign-out successful.
+            
         }).catch((error) => {
-            // An error happened.
+            
         })
             .finally(() => setIsLoading(false));
     }
@@ -103,16 +85,7 @@ const useFirebase = () => {
             .then()
     }
     
-    // const logOut = () => {
-    //     setIsLoading(true);
-    //     signOut(auth)
-    //         .then(() => {
-    //             setUser({})
-    //         })
-    //         .finally(() => {
-    //             setIsLoading(false);
-    //         })
-    // }
+    
 
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, (user) => {
@@ -126,18 +99,7 @@ const useFirebase = () => {
         return () => unsubscribed;
     }, [auth])
 
-    // useEffect(() => {
-    //     const unsubscribed = onAuthStateChanged(auth, user => {
-    //         if (user) {
-    //             setUser(user)
-    //         }
-    //         else {
-    //             setUser({});
-    //         }
-    //         setIsLoading(false)
-    //     });
-    //     return() => unsubscribed;
-    // }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    
 
     return {
         user,
